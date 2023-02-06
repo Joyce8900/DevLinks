@@ -13,15 +13,27 @@ body{
 
 #container{
   width: 360px; /* largura */
-  height: 712px;/* altura */
-  border : 1px solid red;/* bordar: tamanho da borda, estilo e  cor da borda */
+  /* height: 712px;altura */
+  border : 1px solid red; /* bordar: tamanho da borda, estilo e  cor da borda */
   margin: auto;/* margem centralizada automaticamente, ao lado e nos lados */
-
+  display: block;
 }
 
 #profile{
   width: 360px;
-  height: 192px;
+  /* height: 192px; */
   border: 1px solid red;
   margin: auto;
+  text-align: center;
+
+}
+#profile img{ 
+  /* Em elementos de img não se aplica o 'margin', antes se usar o display block que vai abrindo a caixa para os elementos de baixo. */
+  display: block;
+  width: 112px;
+
+ 
+
+  
+  
 }
