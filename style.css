@@ -1,0 +1,27 @@
+body{
+  /* imagem para colocar como 'papel' */
+  /* background-image: url(./assets/Mobile\ -\ 1080x1920.jpg);
+  /* Essa imagem se repete? Senão use isso, assim ficaram uma imagem só */
+  /* background-repeat: no-repeat;
+  imagem ao centro
+  background-position: center;
+  ampliar a imagem de acordo com o tamanho de tela.
+  background-size:cover ; */ 
+  
+  background: url(./assets/Mobile\ -\ 1080x1920.jpg) no-repeat top center/cover ;
+}
+
+#container{
+  width: 360px; /* largura */
+  height: 712px;/* altura */
+  border : 1px solid red;/* bordar: tamanho da borda, estilo e  cor da borda */
+  margin: auto;/* margem centralizada automaticamente, ao lado e nos lados */
+
+}
+
+#profile{
+  width: 360px;
+  height: 192px;
+  border: 1px solid red;
+  margin: auto;
+}
