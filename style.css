@@ -1,3 +1,9 @@
+*{ /*Retirar a margin e o padding que já vem com o navegador  */
+  margin: 0;
+  padding: 0; /*preenchimento interno */
+  box-sizing: border-box; /*medido atraves da borda */
+}
+
 body{
   /* imagem para colocar como 'papel' */
   /* background-image: url(./assets/Mobile\ -\ 1080x1920.jpg);
@@ -11,12 +17,21 @@ body{
   background: url(./assets/Mobile\ -\ 1080x1920.jpg) no-repeat top center/cover ;
 }
 
+body * { /*Significa que irá ser aplicado para todos os seletores dentro do body */
+  font-family: 'Inter', sans-serif;
+  color: #ffff
+}
+
 #container{
   width: 360px; /* largura */
   /* height: 712px;altura */
   border : 1px solid red; /* bordar: tamanho da borda, estilo e  cor da borda */
   margin: auto;/* margem centralizada automaticamente, ao lado e nos lados */
-  display: block;
+  
+  
+ /* margin-top: 56px; distancia de cima, dando um espaço de 56px entre a caixa e o navegador */
+  margin: 56px auto 0px auto;
+
 }
 
 #profile{
@@ -26,14 +41,16 @@ body{
   margin: auto;
   text-align: center;
 
+  padding: 24px;
+
 }
 #profile img{ 
   /* Em elementos de img não se aplica o 'margin', antes se usar o display block que vai abrindo a caixa para os elementos de baixo. */
-  display: block;
   width: 112px;
+}
 
- 
-
-  
-  
+#name{
+  font-weight: 500; /*  Peso do texto */
+  line-height: 24px; /* Altura da linha */
+  margin-top: 8px;  /*distancia de cima, dando um espaço de 8px entre a foto e o ig */
 }
