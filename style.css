@@ -53,4 +53,24 @@ body * { /*Significa que irá ser aplicado para todos os seletores dentro do bod
   font-weight: 500; /*  Peso do texto */
   line-height: 24px; /* Altura da linha */
   margin-top: 8px;  /*distancia de cima, dando um espaço de 8px entre a foto e o ig */
+
+}
+
+/* links */
+ul{
+  list-style: none; /* retirar os simbolos de lista */
+
+  display: flex; /*organizar os elementos de forma que eles se encaixem na caixa*/
+  flex-direction: column;  /* organizar os elementos em coluna */
+  gap: 8px; /* espaços entre os elementos */
+
+}
+
+ul li{
+  border: 1px solid #ffff; /*borda */
+  display: flex;
+  align-items: center; /*centralizar os elementos no meio da caixa*/
+  justify-content: center; /*centraliza os elementos no meio da linha*/
+
+  padding: 16px 24px;
 }
