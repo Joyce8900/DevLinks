@@ -62,15 +62,21 @@ ul{
 
   display: flex; /*organizar os elementos de forma que eles se encaixem na caixa*/
   flex-direction: column;  /* organizar os elementos em coluna */
-  gap: 8px; /* espaços entre os elementos */
+  gap: 16px; /* espaços entre os elementos */
 
 }
 
-ul li{
-  border: 1px solid #ffff; /*borda */
+ul li a{
+  
   display: flex;
   align-items: center; /*centralizar os elementos no meio da caixa*/
   justify-content: center; /*centraliza os elementos no meio da linha*/
 
   padding: 16px 24px;
+
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius:8px ;/*  tipo de borda */
+
+  -webkit-backdrop-filter: blur (4px);
 }
