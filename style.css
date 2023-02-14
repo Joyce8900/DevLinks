@@ -37,7 +37,7 @@ body * { /*Significa que irá ser aplicado para todos os seletores dentro do bod
 #profile{
   width: 360px;
   /* height: 192px; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: auto;
   text-align: center;
 
@@ -89,4 +89,8 @@ ul li a{
 ul li a:hover{
   background: rgba(255,255,255,0.5);
   border: 1.5px solid white;
+}
+#social-links{
+  display: flex;
+  gap: 16px;
 }
