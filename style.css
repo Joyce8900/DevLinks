@@ -35,18 +35,19 @@ body * { /*Significa que irá ser aplicado para todos os seletores dentro do bod
 }
 
 #profile{
-  width: 360px;
+  /* width: 360px; */
   /* height: 192px; */
   /* border: 1px solid red; */
-  margin: auto;
+  /* margin: auto; */
   text-align: center;
-
+ 
   padding: 24px;
 
 }
 #profile img{ 
   /* Em elementos de img não se aplica o 'margin', antes se usar o display block que vai abrindo a caixa para os elementos de baixo. */
   width: 112px;
+  
 }
 
 #name{
@@ -63,7 +64,7 @@ ul{
   display: flex; /*organizar os elementos de forma que eles se encaixem na caixa*/
   flex-direction: column;  /* organizar os elementos em coluna */
   gap: 16px; /* espaços entre os elementos */
-
+  padding: 24px 0px;
 }
 
 ul li a{
@@ -92,5 +93,8 @@ ul li a:hover{
 }
 #social-links{
   display: flex;
-  gap: 16px;
+  gap: 32px;
+  padding: 24px 0;
+  justify-content: center;
+  font-size: 24px;
 }
