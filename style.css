@@ -10,7 +10,7 @@
   --surface-color: rgba(255,255,255,0.05);
   --surface-color-hover:rgba(0,0,0,0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
-
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light{
@@ -20,6 +20,7 @@
   --surface-color: rgba(0,0,0,0.05);
   --surface-color-hover:rgba(0,0,0,0.02);
   --highlight-color: rgba(0,0,0,0.1);
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 body{
@@ -72,6 +73,46 @@ body * { /*Significa que irá ser aplicado para todos os seletores dentro do bod
   font-weight: 500; /*  Peso do texto */
   line-height: 24px; /* Altura da linha */
   margin-top: 8px;  /*distancia de cima, dando um espaço de 8px entre a foto e o ig */
+
+}
+
+/* switch */
+#switch{
+  position: relative;
+  width: 64px;
+
+  margin: 4px auto; /* A maneira de centralizar o elemento, quando se está utilizando display block */
+  
+}
+
+#switch button{
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute; /*posicionamento absoluto faz uma sobposição de camadas */
+  top: 50%;
+  left: 0;
+  z-index: 1;/*  faz com que se alinhe que o andar de cima */
+  transform: translateY(-50%);
+  
+}
+
+.light #switch button{
+  right: 0;
+  left: inherit;
+}
+
+#switch span{
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
 
 }
 
