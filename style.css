@@ -42,7 +42,8 @@ body * { /*Significa que irá ser aplicado para todos os seletores dentro do bod
 }
 
 #container{
-  width: 360px; /* largura */
+  width: 100%; /* largura */
+  max-width: 580px; /* largura maxima*/
   /* height: 712px;altura */
   /* border : 1px solid red; bordar: tamanho da borda, estilo e  cor da borda */
   padding: 0 24px;
