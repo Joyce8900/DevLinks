@@ -99,12 +99,17 @@ body * { /*Significa que irá ser aplicado para todos os seletores dentro do bod
   left: 0;
   z-index: 1;/*  faz com que se alinhe que o andar de cima */
   transform: translateY(-50%);
+
+  animation: slide-back .2s;
   
 }
 
 .light #switch button{
-  right: 0;
-  left: inherit;
+  animation: slide-in 0.4s forwards;
+}
+
+#switch button:hover{
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span{
@@ -190,4 +195,23 @@ footer{
   .light{
     --bg-url: url(./assets/bg-desktop-light.jpg);
   }
+}
+
+
+/* animation */
+@keyframes slide-in {
+    from{
+      left: 0;
+    }
+    to{
+      left: 50%;
+    }
+}
+@keyframes slide-back{
+    from{
+      left: 50%;
+    }
+    to{
+      left: 0;
+    }
 }
